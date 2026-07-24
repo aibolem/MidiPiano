@@ -30,7 +30,7 @@ document.addEventListener("keyup", (e) => {
   let keyPressed = e.code
   let nodesDetail = getNodeDetails(keyPressed)
   if (nodesDetail == null) return
-  nodesDetail.active = true
+  nodesDetail.active = false
   playNode() //we run this function here to remove the class, we added on pressing keydown
 })
 
